@@ -50,7 +50,7 @@ Dentro de `src` os diretórios possuem as seguintes definições:
 
 - **Actions**: a pasta actions contém todas as ações da sua aplicação, e elas podem ser separadas baseadas - nas rotas que você usa, ou até mesmo por responsabilidades que suas ações terão.
 - **Components**: mantém os arquivos de componentes da aplicação.
-- **Reducers**: contém as edfinições de estado que serão utilizados dentro da aplicação.
+- **Reducers**: contém as definições de estado que serão utilizados dentro da aplicação.
 - **Store**: Contém a configuração inicial do Redux e do seu middleware.
 - **Pages**: Contém os páginas que serão carregadas pelas rotas da aplicação.
 - __**__tests__**_: diretório que contém a estrutura de testes.
