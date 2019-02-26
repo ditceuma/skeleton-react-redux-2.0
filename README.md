@@ -22,7 +22,7 @@ skeleton-react-redux-2.0
 │    |    |
 │    |    └── App.test.js
 │    ├── Actions
-│    ├── Actions
+│    ├── Assets
 │    │    ├── actionTypes.js
 │    │    ├── appActions.js
 │    │    └── index.js
