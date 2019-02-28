@@ -1,6 +1,6 @@
 # Skeleton REACT + REDUX 2.0
 
-Skeleton feito para facilitar a criação de apps com react usando redux.
+Skeleton feito para facilitar a criação de apps com react usando redux. Essa versão utiliza o conceito de Hooks do React, [Clique aqui](https://reactjs.org/docs/hooks-intro.html) para conhecê-lo.
 
 *This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
 
