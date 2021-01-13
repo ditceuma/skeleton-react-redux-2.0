@@ -43,7 +43,6 @@ skeleton-react-redux-2.0
 
 Dentro de `src` os diretórios possuem as seguintes definições:
 
-- **Actions**: a pasta actions contém todas as ações da sua aplicação, e elas podem ser separadas baseadas - nas rotas que você usa, ou até mesmo por responsabilidades que suas ações terão.
 - **Components**: mantém os arquivos de componentes da aplicação.
 - **Slices**: contém definições de 'fatias' do estado global da aplicação, baseado na responsabilidade. Gera as funções criadoras de actions, strings dos tipos de actions junto com um reducer pra lidar com todas essas ações.
 - **Pages**: Contém os páginas que serão carregadas pelas rotas da aplicação.
