@@ -1,35 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Logo } from "./Components";
-import { decreaseRate, increaseRate } from "./Actions/appActions";
-import { connect } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "./Assets/css/App.css";
+import { incrementRate, decrementRate } from "./Slices/rate";
 
-const handleControlRate = (plus,value, {decreaseRate, increaseRate} ) => plus ? increaseRate(value) : decreaseRate(value)
+const App = () => {
+  const rate = useSelector(state => state.rate);
+  const dispatch = useDispatch();
 
-const App = (props) => {
-  const [rate, setRate] = useState(0)
-  useEffect(() => setRate(props.rate))
-  
-  return(
+  return (
     <div className="App">
       <header className="App-header">
         <Logo />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>Sua nota para essa pagina: {props.rate}</p>
-        <button
-          target="_blank"
-          onClick={() => handleControlRate(true,rate,props)}
-          rel="noopener noreferrer"
-        >
+        <p>Sua nota para essa pagina: {rate}</p>
+        <button onClick={() => dispatch(incrementRate())}>
           Aumentar nota
         </button>
-        <button
-          target="_blank"
-          onClick={() => handleControlRate(false,rate,props)}
-          rel="noopener noreferrer"
-        >
+        <button onClick={() => dispatch(decrementRate())}>
           Diminuir nota
         </button>
         <a
@@ -42,13 +32,7 @@ const App = (props) => {
         </a>
       </header>
     </div>
-  )
-}
+  );
+};
 
-const mapStateToProps = state => ({
-  rate: state.appState.rate
-});
-
-export default connect(
-  mapStateToProps, { decreaseRate, increaseRate }
-)(App);
+export default App;

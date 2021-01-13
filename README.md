@@ -21,37 +21,30 @@ skeleton-react-redux-2.0
 │    ├── __tests__
 │    |    |
 │    |    └── App.test.js
-│    ├── Actions
-│    │    ├── actionTypes.js
-│    │    ├── appActions.js
-│    │    └── index.js
 │    ├── Assets
 │    │    ├── css
 |    |    |   ├── index.css
 |    |    |   └── App.css
 │    │    └── img
 |    |        ├── logo.svg
+│    ├── Pages
 │    ├── Components
 │    │    ├── shared
 |    |    |   └── Logo.js
 │    │    └── index.js
-│    ├── Pages
-│    ├── Reducers
-│    │    ├── appReducer.js
-│    │    └── index.js
-│    ├── Store
-│    │    └── index.js
+│    ├── Slices
+│    │    └── rate.js
 │    ├── App.js
 │    ├── index.js
+│    ├── store.js
+│    ├── reducers.js
 │    └── serviceWorker.js
 ```
 
 Dentro de `src` os diretórios possuem as seguintes definições:
 
-- **Actions**: a pasta actions contém todas as ações da sua aplicação, e elas podem ser separadas baseadas - nas rotas que você usa, ou até mesmo por responsabilidades que suas ações terão.
 - **Components**: mantém os arquivos de componentes da aplicação.
-- **Reducers**: contém as definições de estado que serão utilizados dentro da aplicação.
-- **Store**: Contém a configuração inicial do Redux e do seu middleware.
+- **Slices**: contém definições de 'fatias' do estado global da aplicação, baseado na responsabilidade. Gera as funções criadoras de actions, strings dos tipos de actions junto com um reducer pra lidar com todas essas ações.
 - **Pages**: Contém os páginas que serão carregadas pelas rotas da aplicação.
 - __**__tests__**_: diretório que contém a estrutura de testes.
 ## Instruções:
