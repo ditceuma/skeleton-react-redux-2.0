@@ -2,7 +2,7 @@ import React from "react";
 import { Logo } from "./Components";
 import { useDispatch, useSelector } from "react-redux";
 import "./Assets/css/App.css";
-import { incrementRate, decrementRate } from "./slices/rateSlice";
+import { incrementRate, decrementRate } from "./Slices/rate";
 
 const App = () => {
   const rate = useSelector(state => state.rate);
