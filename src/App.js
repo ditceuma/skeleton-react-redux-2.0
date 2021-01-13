@@ -19,16 +19,12 @@ const App = (props) => {
         </p>
         <p>Sua nota para essa pagina: {props.rate}</p>
         <button
-          target="_blank"
           onClick={() => handleControlRate(true,rate,props)}
-          rel="noopener noreferrer"
         >
           Aumentar nota
         </button>
         <button
-          target="_blank"
           onClick={() => handleControlRate(false,rate,props)}
-          rel="noopener noreferrer"
         >
           Diminuir nota
         </button>
